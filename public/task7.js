@@ -1,3 +1,4 @@
+"use strict"
 let a = prompt();
 let b = prompt();
 

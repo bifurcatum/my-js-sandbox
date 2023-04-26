@@ -1,3 +1,4 @@
+"use strict"
 let posneg = prompt("Enter number", 0);
 if (posneg > 0) {
     alert('1');
