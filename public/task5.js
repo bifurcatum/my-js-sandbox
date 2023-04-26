@@ -1,3 +1,4 @@
+"use strict"
 let jsName = prompt('Какое "официальное" название JavaScript', '');
 
 if(jsName == 'ECMAScript') {
