@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friends list</title>
+</head>
+<body>
+
+<script>
+    let friends = [
+        {
+            firstName: 'Artsiom',
+            lastName: 'Mezin'
+        },
+        {
+            firstName: 'Ilia',
+            lastName: 'Kantor'
+        },
+        {
+            firstName: 'Christopher',
+            lastName: 'Michael'
+        }
+    ];
+
+    let div = document.createElement('div');
+    div.id = 'list';
+    document.body.append(div);
+
+    function makeFriendList(obj) {
+        let ul = document.createElement('ul');
+        obj.forEach(item => {
+            let li = document.createElement('li');
+            li.innerHTML = `${item.firstName} ${item.lastName}`;
+            ul.append(li);
+        });
+        return ul;
+    }
+
+    let friendList = makeFriendList(friends);
+    document.getElementById('list').append(friendList);
+</script>
+</body>
+</html>
